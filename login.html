@@ -1,0 +1,125 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Login - News Portal</title>
+</head>
+<body>
+    <header>
+        <h1 data-lang="title">News Portal</h1>
+        <nav>
+            <a href="login.html" data-lang="login">Login</a>
+            <a href="register.html" data-lang="register">Register</a>
+            <div class="language-switch">
+                <button id="en-btn">EN</button>
+                <button id="tr-btn">TR</button>
+            </div>
+        </nav>
+        <div id="weather">
+            <p data-lang="loading">Loading weather...</p>
+        </div>
+    </header>
+    <main>
+        
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </main>
+    <script src="js/weather.js"></script>
+    <script src="js/translate.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register & Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="firebaseauth.js"></script>
+</head>
+<body>
+    <div class="container" id="signup" style="display:none;">
+      <h1 class="form-title">Register</h1>
+      <form method="post" action="">
+        <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+        <div class="input-group">
+           <i class="fas fa-user"></i>
+           <input type="text"  id="fName" placeholder="First Name" required>
+           <label for="fname">First Name</label>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text"  id="lName" placeholder="Last Name" required>
+            <label for="lName">Last Name</label>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email"  id="rEmail" placeholder="Email" required>
+            <label for="rEmail">Email</label>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="rPassword"  placeholder="Password" required>
+            <label for="rPassword">Password</label>
+        </div>
+       <button class="btn" id="submitSignUp" >Sign Up</button>
+      </form>
+      <p class="or">
+        ----------or--------
+      </p>
+      <div class="icons">
+        <i class="fab fa-google"></i>
+        <i class="fab fa-facebook"></i>
+      </div>
+      <div class="links">
+        <p>Already Have Account ?</p>
+        <button id="signInButton">Sign In</button>
+      </div>
+    </div>
+
+  <div class="container" id="signIn">
+        <h1 class="form-title">Sign In</h1>
+        <form method="post" action="">
+          <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+
+          <div class="input-group">
+              <i class="fas fa-envelope"></i>
+              <input type="email"  id="email" placeholder="Email" required>
+              <label for="email">Email</label>
+          </div>
+          <div class="input-group">
+              <i class="fas fa-lock"></i>
+            <input type="password" id="password"  placeholder="Password" required>
+              <label for="password">Password</label>
+          </div>
+          <p class="recover">
+            <a href="#">Recover Password</a>
+          </p>
+         <button  class="btn"  id="submitSignIn">Sign In</button>
+        </form>
+        <p class="or">
+          ----------or--------
+        </p>
+        <div class="icons">
+          <i class="fab fa-google"></i>
+          <i class="fab fa-facebook"></i>
+        </div>
+        <div class="links">
+          <p>Don't have account yet?</p>
+          <button id="signUpButton">Sign Up</button>
+        </div>
+      </div>
+      <script src="js/login.js"></script>
+</body>
+</html>

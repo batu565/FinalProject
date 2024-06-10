@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.language-switch button {
+    margin-left: 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+}
+
+.news-list li {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.news-list img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+.user-actions {
+    margin-top: 20px;
+}
+
+.user-actions button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#weather {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.search-bar {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 16px;
+    flex: 1;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#user-info {
+    display: none;
+}

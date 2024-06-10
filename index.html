@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>News Portal</title>
+    <script type="module" src="js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="home-link">
+            <h1 data-lang="title">News Portal</h1>
+        </a>
+        <nav>
+            <a href="index.html" data-lang="home">Home</a>
+            <div id="user-info">
+                <div>First Name: <span id="loggedUserFName"></span></div>
+                <div>Last Name: <span id="loggedUserLName"></span></div>
+                <div>Email: <span id="loggedUserEmail"></span></div>
+                <button id="logout">Logout</button>
+            </div>
+            <a href="login.html" id="login-button" data-lang="login">Login</a>
+
+
+
+            <div class="language-switch">
+                <button id="en-btn">EN</button>
+                <button id="tr-btn">TR</button>
+            </div>
+        </nav>
+
+        <div id="weather">
+            <p data-lang="loading">Loading weather...</p>
+        </div>
+    </header>
+    <main>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search news...">
+            <button id="search-btn">Search</button>
+        </div>
+        <h2 data-lang="top-news">Top News</h2>
+        <ul class="news-list" id="news-list">
+            <li>
+                <img src="images/news1.jpg" alt="News Image">
+                <h3 data-lang="news-title-1">Arda Güler outperformed Real Madrid's new transfer Mbappe! The Spanish
+                    announced, exactly 180 million Euros...</h3>
+                <p data-lang="news-content-1">La Liga and Champions League champion Real Madrid announced that they have
+                    added Kylian Mbappe to their squad. In a statement made by Los Blancos, it was reported that a
+                    five-year contract was signed with the French star.</p>
+                <p><small data-lang="time-source-1">3 hours ago | Source: GazeteVatan</small></p>
+            </li>
+            <li>
+                <img src="images/news2.jpg" alt="News Image">
+                <h3 data-lang="news-title-2">Life advice from robot to human</h3>
+                <p data-lang="news-content-2">Researchers at the Massachusetts Institute of Technology (MIT) in the US
+                    have created an AI-powered chatbot that simulates the older personas of young users and offers their
+                    observations and sage advice. The aim of the project, called “Future You,” is to encourage people to
+                    think more about the person they want to be in the future. The chatbot, which produces plausible
+                    artificial memories, uses the user’s current desires to tell stories about successful lives.</p>
+                <p><small data-lang="time-source-2">5 hours ago | Source: Milliyet</small></p>
+            </li>
+            <li>
+                <img src="images/news3.jpg" alt="News Image">
+                <h3 data-lang="news-title-3">2 shark attacks on the same day! 3 people injured...</h3>
+                <p data-lang="news-content-3">Two separate shark attacks occurred on a beach in South Walton, Florida,
+                    on Friday. Authorities said in a statement regarding the attacks: “The South Walton Fire District
+                    and the Walton County Sheriff’s Office responded to two shark-related incidents Friday afternoon in
+                    Florida. Two people were seriously injured, and one person was slightly injured.</p>
+                <p><small data-lang="time-source-3">8 hours ago | Source: Hürriyet</small></p>
+            </li>
+            <li>
+                <img src="images/news4.jpg" alt="News Image">
+                <h3 data-lang="news-title-4">The world's highest garbage dump! 11 tons of garbage found on three
+                    Himalayan peaks</h3>
+                <p data-lang="news-content-4">The Nepalese army has said it has collected 11 tonnes of garbage, four
+                    corpses and one skeleton from Mount Everest and two other Himalayan peaks this year. It took
+                    soldiers 55 days to collect the garbage and bodies from Mount Everest, Nuptse and Lhotse. It is
+                    estimated that there are more than 50 tonnes of garbage and 200 bodies on Everest. The clean-up
+                    efforts on the mountain, often referred to as the ‘world’s highest garbage dump’, were launched in
+                    2019 after concerns about crowds and dangerous conditions as climbers lined up to reach the summit.
+                    The army said that a total of 119 tonnes of garbage, 14 corpses and some skeletons were brought back
+                    in five clean-up operations. Content Video - The much-talked-about footage! Gang members searched
+                    half-naked faint Authorities hope to reduce litter this year and have climbers wear tracking devices
+                    to facilitate rescue operations and have climbers bring their own excrement from the summit. Rakesh
+                    Gurung, director of the Nepal Mountaineering Tourism Corporation, told the BBC that the government
+                    plans to set up mountain patrols to monitor litter in the future and allocate more financial
+                    resources. The government issued permits to climb the summit to 421 climbers during the spring
+                    climbing season, which ended in May. Last year, a record was broken when 478 were issued. That
+                    number does not include Nepalese guides. An estimated 600 people have climbed the mountain this
+                    year. Eight climbers have also died or gone missing this year. Last year, the number was 19. Gurung
+                    said the number of permits to climb the summit had fallen due to the global economic downturn. China
+                    issuing permits and elections in India have also contributed to the decline. The number is expected
+                    to fall further after the Nepalese Supreme Court ordered the government to reduce the number of
+                    permits.</p>
+                <p><small data-lang="time-source-4">1 day ago | Source: CnnTürk</small></p>
+            </li>
+        </ul>
+    </main>
+    <script src="js/weather.js"></script>
+    <script src="js/translate.js"></script>
+    <script src="js/search.js"></script>
+
+</body>
+
+</html>
